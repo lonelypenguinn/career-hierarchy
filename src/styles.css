@@ -1,0 +1,43 @@
+:root{
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#0f766e;
+  --primary:#064e3b;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; margin:0; background:var(--bg); color:#0f172a}
+.app .hero{background:linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); padding:36px 18px}
+.hero-inner{max-width:800px; margin:0 auto; text-align:center}
+.hero h1{font-size:20px; margin:0 0 8px}
+.hero .sub{color:var(--muted); margin:0 0 12px}
+.primary-cta{background:var(--accent); color:white; border:none; padding:12px 18px; border-radius:10px; font-weight:600}
+.meta{color:var(--muted); margin-top:8px}
+.container{max-width:900px; margin:24px auto; padding:0 12px}
+.form-card{background:var(--card); border-radius:12px; padding:18px; box-shadow:0 1px 4px rgba(2,6,23,0.06); margin-bottom:18px}
+.form-card h2{margin:0 0 8px}
+.label{display:block}
+.step label{display:block; margin-bottom:10px}
+.step input, .step select{width:100%; padding:10px; border-radius:8px; border:1px solid #e6edf3; margin-top:6px}
+.skill-entry{display:flex; gap:8px}
+.skills-list{margin-top:8px}
+.skill{display:inline-block; background:#eef2f6; padding:6px 8px; border-radius:999px; margin-right:6px}
+.actions{display:flex; gap:8px; justify-content:flex-end; margin-top:12px}
+.actions .primary{background:var(--primary); color:white; padding:8px 12px; border-radius:8px}
+.progress{color:var(--muted); margin-bottom:12px}
+.results .back{background:none;border:none;color:var(--muted);margin-bottom:12px}
+.signal{background:var(--card); padding:12px; border-radius:10px; margin-bottom:12px}
+.score{font-size:28px; font-weight:700}
+.card{background:var(--card); padding:12px; border-radius:10px; margin-bottom:12px}
+.card.highlight{border-left:4px solid var(--accent)}
+.options-grid{display:grid; grid-template-columns:1fr; gap:10px}
+.option-card{background:#f8fafc; padding:10px; border-radius:8px}
+.skills{display:flex; gap:32px}
+.skills ul{margin:6px 0 0 0; padding-left:18px}
+.decision{background:linear-gradient(180deg, #ffffff, #fbfffd)}
+.footer{max-width:900px;margin:0 auto;padding:18px;color:var(--muted)}
+
+@media(min-width:800px){
+  .hero h1{font-size:28px}
+  .options-grid{grid-template-columns:repeat(2,1fr)}
+}
